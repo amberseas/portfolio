@@ -1,0 +1,57 @@
+.header {
+  &__logo-box {
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    border-radius: 6rem;
+    box-shadow: 0 0 3rem #fff;
+    overflow: hidden;
+    .logo {
+    width: 100%;
+    }
+  }
+
+  &__nav {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .navigation {
+      &__list {
+        padding: 0;
+        list-style: none;
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 6rem;
+        margin-right: 10rem;
+      }
+      &__item {
+
+      }
+
+      &__link {
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2.2rem;
+
+
+      }
+    }
+  }
+
+  .highlight {
+    color: #de9e36;
+  }
+
+}
+
