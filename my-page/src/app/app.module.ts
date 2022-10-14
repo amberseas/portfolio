@@ -6,6 +6,10 @@ import { EntryComponent } from './entry/entry.component';
 import { SkillsCardComponent } from './skills-card/skills-card.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectItemComponent } from './projects/project-item/project-item.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -13,10 +17,13 @@ import { AboutComponent } from './about/about.component';
     EntryComponent,
     SkillsCardComponent,
     HeaderComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsComponent,
+    ProjectItemComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

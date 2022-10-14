@@ -1,15 +1,35 @@
+@import '../shared/mixins.scss';
+
 .section-about {
   font-family: 'Josefin Sans', sans-serif;
   height: 50rem;
   margin-top: 10rem;
 
+  @include respond(tab-land) {
+    height: auto;
+    margin-top: 5rem;
+  }
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
+
   .container {
     margin: 0 auto;
-    width: 110rem;
+    max-width: 110rem;
     display: flex;
+
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
+
     .col-1-of-2 {
       width: 50%;
       position: relative;
+
+      @include respond(tab-land) {
+        width: 100%;
+      }
+
       .title {
         text-transform: uppercase;
         font-size: 1.9rem;
@@ -34,6 +54,19 @@
         right: 0;
         transform: translateY(-50%);
 
+        @include respond(tab-land) {
+          width: 100%;
+          height: 30rem;
+          position: static;
+          transform: translateY(0%);
+          margin-bottom: 5rem;
+        }
+
+        @include respond(tab-port) {
+          display: none;
+        }
+
+
         &__image-box {
           transform: skewX(-10deg);
           width: 35rem;
@@ -44,9 +77,21 @@
           justify-content: center;
           transition: all .5s;
 
+          @include respond(tab-land) {
+            transform: skewX(0) scale(0.8);
+            width: 50%;
+            margin: 0 auto;
+            margin-top: -2rem;
+          }
+
           .image {
             transform: skewX(10deg);
             width: 120%;
+
+            @include respond(tab-land) {
+              transform: skewX(0) ;
+
+            }
           }
         }
 
@@ -61,11 +106,20 @@
           left: 2rem;
           z-index: -10;
           transition: all .5s;
+
+          @include respond(tab-land) {
+            display: none;
+          }
         }
 
         &:hover .composition__image-box {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
           transform: translateY(-1.5rem) translateX(-1.5rem) skewX(-10deg);
+
+          @include respond(tab-land) {
+            box-shadow: none;
+            transform: translateY(0) translateX(0) skewX(-10deg) scale(0.8);
+          }
         }
 
         &:hover .composition__border {

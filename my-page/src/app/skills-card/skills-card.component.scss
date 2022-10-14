@@ -8,12 +8,21 @@
   height: 70rem;
   font-family: 'Josefin Sans', sans-serif;
   position: relative;
+
+  @include respond(phone) {
+    height: 90rem;
+  }
+
   .card {
-    width: 50%;
+    width: 70%;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
     margin: 0 auto;
     @include absCenter;
+
+    @include respond(big-desktop) {
+      width: 50%;
+    }
 
     &__title {
       color: #03071e;
@@ -23,6 +32,14 @@
       margin: 0;
       padding: 4rem;
       padding-bottom: 0;
+
+      @include respond(phone) {
+        font-size: 1.5rem;
+      }
+
+      @include respond(tab-port) {
+        padding-left: 1.5rem;
+      }
     }
 
     &__info {
@@ -31,12 +48,29 @@
       padding: 4rem;
       padding-top: 2rem;
 
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+
+      @include respond(tab-port) {
+        padding: 1.5rem;
+      }
+
       .paragraph {
         font-size: 2rem;
         line-height: 3rem;
         width: 45%;
         text-align: justify;
         margin: 0;
+
+        @include respond(tab-port) {
+          width: 100%;
+        }
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+          text-align: left;
+        }
       }
     }
 
@@ -48,6 +82,25 @@
       grid-template-rows: repeat(3, 7rem);
       justify-content: center;
       align-items: center;
+
+      @include respond(tab-land) {
+        grid-template-columns: repeat(3, 10rem);
+        grid-template-rows: repeat(4, 7rem);
+      }
+
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+        width: 100%;
+        margin-top: 2rem;
+        grid-template-columns: repeat(4, 10rem);
+        grid-template-rows: repeat(3, 7rem);
+      }
+
+      @include respond(phone) {
+        font-size: 2rem;
+        grid-template-columns: repeat(3, 8rem);
+        grid-template-rows: repeat(4, 6rem);
+      }
 
       div {
         width: 100%;

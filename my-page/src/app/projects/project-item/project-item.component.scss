@@ -1,0 +1,81 @@
+@import '../../shared/mixins.scss';
+.project-container {
+  width: 70rem;
+  margin: 2rem;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all .5s;
+
+  @include respond(tab-land) {
+    width: 50rem;
+        }
+
+        @include respond(tab-port) {
+          width: 40rem;
+              }
+
+              @include respond(phone) {
+                width: 25rem;
+                    }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .image {
+    width: 100%;
+    transition: all .6s;
+  }
+
+  &:hover .image {
+    filter: blur(7px) brightness(80%);
+    -webkit-filter: blur(7px) brightness(80%);
+  }
+
+  &:hover .info-container {
+    @include absCenter;
+  }
+
+  .info-container {
+    @include absCenter;
+    top: 40rem;
+    width: 70%;
+    transition: all .6s;
+  }
+
+  .title {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.7rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .skills {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .link-container {
+    margin-top: 3rem;
+    height: 2.5rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    .link {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      font-size: 1.3rem;
+      transition: font-size .2s;
+
+      &:hover {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+}

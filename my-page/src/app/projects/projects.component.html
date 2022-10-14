@@ -1,0 +1,27 @@
+<section class="section-projects">
+  <h3 class="title">My projects</h3>
+  <div class="container">
+    <app-project-item
+
+
+    ></app-project-item>
+  </div>
+  <div
+  class="arrow arrow-prev"
+  (click)="onShowPrev()">
+    <span class="material-symbols-outlined">
+      chevron_left
+      </span>
+  </div>
+  <div
+  class="arrow arrow-next"
+  (click)="onShowNext()"
+  >
+    <span class="material-symbols-outlined">
+      chevron_right
+      </span>
+  </div>
+</section>
+
+<!-- *ngFor="let project of projects" -->
+<!-- [project]="project" -->
