@@ -48,12 +48,12 @@
     transition: all .2s;
 
     &:hover {
-      transform: translate(-50%, -50%) scale(1.05);
+      transform: translateY(-50%) scale(1.05);
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
 
     &:active{
-      transform: translate(-50%, -50%) scale(0.995);
+      transform: translateY(-50%) scale(0.995);
       box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 6px -8px;
     }
 

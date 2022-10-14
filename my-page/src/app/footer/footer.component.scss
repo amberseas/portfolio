@@ -12,19 +12,32 @@
   .row {
     display: flex;
     justify-content: center;
+
+    @include respond(phone){
+      flex-direction: column;
+    }
   }
 
   .col-1-of-2 {
     width: 45%;
     position: relative;
     display: flex;
+
+    @include respond(phone){
+      width: 100%;
+    }
   }
 
   .right {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 5rem
+    padding-left: 5rem;
+
+    @include respond(phone){
+      padding: 0;
+      align-items: flex-start;
+    }
   };
 
   .left {
@@ -35,6 +48,13 @@
     @include respond(tab-land) {
       flex-direction: column;
     }
+
+    @include respond(phone){
+      padding: 0;
+    }
+
+
+
   }
 
   &__logo-box {
@@ -75,6 +95,11 @@
     list-style: none;
     display: flex;
     gap: 3rem;
+
+    @include respond(phone){
+      align-self: center;
+      margin: 2rem;
+    }
 
     .list-item {
       width: 2.5rem;

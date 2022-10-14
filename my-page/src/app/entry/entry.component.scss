@@ -1,10 +1,15 @@
+@import '../shared/mixins.scss';
+
 .header {
   height: 95vh;
   background-image: url('../../assets/background.jpg');
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 50% 100%, 0 90vh);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 
+  @include respond(phone){
+    height: 50vh;
+  }
 
   &__title {
     background: rgba(255, 255, 255, 0.06);
@@ -25,13 +30,40 @@
     color: #fff;
     font-family: 'Source Code Pro', monospace;
     font-size: 5rem;
+
     &--name {
     margin-bottom: 3rem;
+    @include respond(phone){
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
     }
 
     &--about {
       font-size: 4rem;
+
+      @include respond(tab-port){
+        font-size: 3rem;
+      }
+
+      @include respond(phone){
+        font-size: 2rem;
+      }
+
+
     }
+
+    @include respond(tab-port){
+      width: 40rem;
+      font-size: 3rem;
+    }
+    @include respond(phone){
+      top: 20rem;
+      width: 30rem;
+      height: 15rem;
+      font-size: 1rem;
+    }
+
   }
 
   &__links {
