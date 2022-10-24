@@ -27,7 +27,7 @@ export class ProjectsService {
       imageUrl: '../../assets/english-game.png',
       name: 'Card game',
       skills: 'HTML, SCSS, Javascript',
-      codeLink: '',
+      codeLink: 'https://github.com/amberseas/card-game',
       liveLink: 'https://amberseas-game.netlify.app'
     },
     {
@@ -48,7 +48,7 @@ export class ProjectsService {
       imageUrl: '../../assets/keyboard.png',
       name: 'Virtual keyboard',
       skills: 'CSS, Javascript',
-      codeLink: '',
+      codeLink: 'https://github.com/amberseas/keyboard',
       liveLink: 'https://amberseas-web.netlify.app'
     },
     {
