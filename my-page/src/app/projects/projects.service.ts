@@ -10,7 +10,14 @@ export class ProjectsService {
   page: number;
   allProjects: Project[] = [
     {
-      imageUrl: '../../assets/youtube.png',
+      imageUrl: '../../assets/e-commerce.png',
+      name: 'E-commerce product page',
+      skills: 'HTML, SCSS, Typescript, Angular',
+      codeLink: 'https://github.com/amberseas/FrontendMentorChallenges/tree/E-commerce',
+      liveLink: 'https://amberseas-ecommerce.netlify.app/n' 
+    },
+    {
+      imageUrl: '../../assets/youtube-client.png',
       name: 'Youtube search',
       skills: 'HTML, SCSS, Typescript, Angular',
       codeLink: '',
@@ -31,7 +38,7 @@ export class ProjectsService {
       liveLink: 'https://amberseas-game.netlify.app'
     },
     {
-      imageUrl: '../../assets/three-column-card.jpg',
+      imageUrl: '../../assets/three-column-card.png',
       name: 'Responsive card',
       skills: 'HTML and CSS',
       codeLink: 'https://github.com/amberseas/Frontend_Mentor_Challenges',
@@ -49,7 +56,7 @@ export class ProjectsService {
       name: 'Virtual keyboard',
       skills: 'CSS, Javascript',
       codeLink: 'https://github.com/amberseas/keyboard',
-      liveLink: 'https://amberseas-web.netlify.app'
+      liveLink: 'https://amberseas-keyboard.netlify.app'
     },
     {
       imageUrl: '../../assets/calculator.png',

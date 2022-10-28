@@ -17,7 +17,8 @@ export interface Project {
 })
 export class ProjectsComponent implements OnInit, OnDestroy {
   project: Project;
-  page: number = 1;
+  page: number = 0;
+  numberOfProjects = this.projectsService.allProjects.length;
   private subscription: Subscription;
 
   constructor(private projectsService: ProjectsService) { }
@@ -35,14 +36,14 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       if(this.page > 0) {
         this.page--;
       } else {
-        this.page = 6;
+        this.page = this.numberOfProjects -1;
       }
 
       this.projectsService.updateProjects(this.page);
     }
 
     onShowNext(){
-      if(this.page < 6) {
+      if(this.page < this.numberOfProjects - 1) {
         this.page++;
     } else {
       this.page = 0;
