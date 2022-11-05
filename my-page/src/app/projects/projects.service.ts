@@ -10,11 +10,18 @@ export class ProjectsService {
   page: number;
   allProjects: Project[] = [
     {
+      imageUrl: '../../assets/space-tourism.png',
+      name: 'Space tourism',
+      skills: 'HTML, SCSS, Typescript, Angular',
+      codeLink: 'https://github.com/amberseas/FrontendMentorChallenges/tree/space-tourism',
+      liveLink: 'https://amberseas-space-tourism.netlify.app/' 
+    },
+    {
       imageUrl: '../../assets/e-commerce.png',
       name: 'E-commerce product page',
       skills: 'HTML, SCSS, Typescript, Angular',
       codeLink: 'https://github.com/amberseas/FrontendMentorChallenges/tree/E-commerce',
-      liveLink: 'https://amberseas-ecommerce.netlify.app/n' 
+      liveLink: 'https://amberseas-ecommerce.netlify.app/' 
     },
     {
       imageUrl: '../../assets/youtube-client.png',
