@@ -1,0 +1,41 @@
+.header__logo-box {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  border-radius: 6rem;
+  box-shadow: 0 0 3rem #fff;
+  overflow: hidden;
+}
+.header__logo-box .logo {
+  width: 100%;
+}
+.header__nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 22rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__nav .navigation__list {
+  padding: 0;
+  list-style: none;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 6rem;
+  margin-right: 10rem;
+}
+.header__nav .navigation__link {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.2rem;
+}
+.header .highlight {
+  color: #de9e36;
+}/*# sourceMappingURL=header.component.css.map */

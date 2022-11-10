@@ -24,6 +24,13 @@ export class ProjectsService {
       liveLink: 'https://amberseas-ecommerce.netlify.app/' 
     },
     {
+      imageUrl: '../../assets/chat-app.png',
+      name: 'All CSS animated chat-app illustration',
+      skills: 'HTML, SCSS',
+      codeLink: 'https://github.com/amberseas/FrontendMentorChallenges/tree/chat-app',
+      liveLink: 'https://amberseas-chat-app.netlify.app/' 
+    },
+    {
       imageUrl: '../../assets/youtube-client.png',
       name: 'Youtube search',
       skills: 'HTML, SCSS, Typescript, Angular',

@@ -1,0 +1,91 @@
+.section-projects {
+  height: auto;
+  position: relative;
+  margin: 10rem auto;
+}
+@media only screen and (max-width: 75em) {
+  .section-projects {
+    height: auto;
+    margin: 5rem auto;
+  }
+}
+.section-projects .container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition: all 1s;
+}
+@media only screen and (max-width: 75em) {
+  .section-projects .container {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    transform: translate(0%, 0%);
+    height: auto;
+  }
+}
+.section-projects .title {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  margin: 2rem 0 3rem 10rem;
+  text-decoration: underline;
+}
+.section-projects .arrow {
+  cursor: pointer;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s;
+}
+.section-projects .arrow:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.section-projects .arrow:active {
+  transform: translateY(-50%) scale(0.995);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 6px -8px;
+}
+.section-projects .arrow-prev {
+  left: 10rem;
+}
+@media only screen and (max-width: 75em) {
+  .section-projects .arrow-prev {
+    left: 5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-projects .arrow-prev {
+    left: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-projects .arrow-prev {
+    left: 1rem;
+  }
+}
+.section-projects .arrow-next {
+  right: 10rem;
+}
+@media only screen and (max-width: 75em) {
+  .section-projects .arrow-next {
+    right: 5rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-projects .arrow-next {
+    right: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-projects .arrow-next {
+    right: 1rem;
+  }
+}/*# sourceMappingURL=projects.component.css.map */

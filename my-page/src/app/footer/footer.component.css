@@ -1,0 +1,102 @@
+.footer {
+  width: 100%;
+  padding: 3rem;
+  background-color: #2d322e;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.7rem;
+  position: relative;
+}
+.footer .row {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer .row {
+    flex-direction: column;
+  }
+}
+.footer .col-1-of-2 {
+  width: 45%;
+  position: relative;
+  display: flex;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer .col-1-of-2 {
+    width: 100%;
+  }
+}
+.footer .right {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer .right {
+    padding: 0;
+    align-items: flex-start;
+  }
+}
+.footer .left {
+  padding-right: 5rem;
+  align-items: baseline;
+  gap: 2rem;
+}
+@media only screen and (max-width: 75em) {
+  .footer .left {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer .left {
+    padding: 0;
+  }
+}
+.footer__logo-box {
+  margin: 1rem auto;
+  width: 9rem;
+  -webkit-clip-path: polygon(10% 10%, 50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%);
+          clip-path: polygon(10% 10%, 50% 0, 90% 10%, 100% 50%, 90% 90%, 50% 100%, 10% 90%, 0 50%);
+}
+.footer__logo-box img {
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer__logo-box {
+    width: 7rem;
+  }
+}
+.footer__info {
+  width: 30rem;
+}
+.footer__info .paragraph {
+  margin: 0;
+}
+.footer__contacts .phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.footer__links {
+  height: 3rem;
+  margin-bottom: 4rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__links {
+    align-self: center;
+    margin: 2rem;
+  }
+}
+.footer__links .list-item {
+  width: 2.5rem;
+  transition: all 0.2s;
+}
+.footer__links .list-item:hover {
+  width: 3rem;
+}/*# sourceMappingURL=footer.component.css.map */
